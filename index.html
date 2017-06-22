@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>SVG Slider</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <main>
+      <section class="section-area">
+        <div class="parent-container">
+          <div class="container-wrapper">
+            <div class="indicators-wrapper animate-indicators">
+              <ul class="indicators-list">
+                <!--Square shape-->
+                <li class="indicators">
+                  <div class="icon-label-wrapper">
+                    <svg class="indicators-icon indicators-icon--rect">
+                      <g class="svg-shape-group">
+                        <rect class="indicators-icon__shape indicators-icon__shape--rhombus" x="4" y="5" fill="url(#bg-fill)" height="14" width="14"></rect>
+                        <defs>
+                          <linearGradient id="bg-fill" x="4" y="5">
+                            <stop offset="0" style="stop-color:#3F51B5;"></stop>
+                            <stop offset="1" style="stop-color:#2196F3;"></stop>
+                          </linearGradient>
+                          <clipPath id="rhombus-view">
+                            <rect class="indicators-icon__shape indicators-icon__shape--rhombus" x="4" y="5"></rect>
+                          </clipPath>
+                        </defs>
+                        <image class="pattern-img" xlink:href="img/dot_pattern.svg" clip-path="url(#rhombus-view)"></image>
+                      </g>
+                      <g class="shape-brief-text">
+                                      <line class="shape-brief-text__text-line" x1="40" y1="12" x2="60" y2="12"></line>
+                        <text class="nav-link-text nav-link-text--caps shape-brief-text__label" x="80" y="15">Indicator text 1</text>
+                      </g>
+                    </svg><span class="small-header icon-label-wrapper__label label" data-label="Indicator text 1">Indicator text 1</span>
+                  </div>
+                </li>
+                <!--END: Square shape-->
+                <!--Hexagone shape-->
+                <li class="indicators">
+                  <div class="icon-label-wrapper">
+                    <svg class="indicators-icon">
+                      <g class="svg-shape-group">
+                        <polygon class="indicators-icon__shape" points="9.927,0.64 17.98,5.3 17.98,14.58 9.927,19.22 1.9,14.58 1.9,5.3"></polygon>
+                        <defs>
+                          <linearGradient id="bg-fill" x="4" y="5">
+                            <stop offset="0" style="stop-color:#3F51B5;"></stop>
+                            <stop offset="1" style="stop-color:#2196F3;"></stop>
+                          </linearGradient>
+                          <clipPath id="hexagone-view">
+                            <polygon class="indicators-icon__shape" points="9.927,0.64 17.98,5.3 17.98,14.58 9.927,19.22 1.9,14.58 1.9,5.3"></polygon>
+                          </clipPath>
+                        </defs>
+                        <image class="pattern-img" xlink:href="img/dot_pattern.svg" clip-path="url(#hexagone-view)"></image>
+                      </g>
+                      <g class="shape-brief-text">
+                                      <line class="shape-brief-text__text-line" x1="40" y1="12" x2="60" y2="12"></line>
+                        <text class="nav-link-text nav-link-text--caps shape-brief-text__label" x="80" y="15">Indicator text 2</text>
+                      </g>
+                    </svg><span class="small-header icon-label-wrapper__label label" data-label="Indicator text 2">Indicator text 2</span>
+                  </div>
+                </li>
+                <!--END: Hexagone shape-->
+                <!--END: Circle shape-->
+                <li class="indicators">
+                  <div class="icon-label-wrapper">
+                    <svg class="indicators-icon">
+                      <g class="svg-shape-group">
+                        <circle class="indicators-icon__shape" cx="10" cy="10" r="9"></circle>
+                        <defs>
+                          <linearGradient id="bg-fill" x="4" y="5">
+                            <stop offset="0" style="stop-color:#3F51B5;"></stop>
+                            <stop offset="1" style="stop-color:#2196F3;"></stop>
+                          </linearGradient>
+                          <clipPath id="circle-view">
+                            <circle class="indicators-icon__shape" cx="10" cy="10" r="8"></circle>
+                          </clipPath>
+                        </defs>
+                        <image class="pattern-img" xlink:href="img/dot_pattern.svg" clip-path="url(#circle-view)"></image>
+                      </g>
+                      <g class="shape-brief-text">
+                                      <line class="shape-brief-text__text-line" x1="40" y1="12" x2="60" y2="12"></line>
+                        <text class="nav-link-text nav-link-text--caps shape-brief-text__label" x="80" y="15">Indicator text 3</text>
+                      </g>
+                    </svg><span class="small-header icon-label-wrapper__label label" data-label="Indicator text 3">Indicator text 3</span>
+                  </div>
+                </li>
+                <!--END: Circle shape-->
+                <!--Triangle shape-->
+                <li class="indicators">
+                  <div class="icon-label-wrapper">
+                    <svg class="indicators-icon">
+                      <g class="svg-shape-group">
+                        <polygon class="indicators-icon__shape" points="1.1,17.02 9.919,1.74 18.75,17.12"></polygon>
+                        <defs>
+                          <linearGradient id="bg-fill" x="4" y="5">
+                            <stop offset="0" style="stop-color:#3F51B5;"></stop>
+                            <stop offset="1" style="stop-color:#2196F3;"></stop>
+                          </linearGradient>
+                          <clipPath id="triangle-view">
+                            <polygon class="indicators-icon__shape" points="1.1,17.02 9.919,1.74 18.75,17.12"></polygon>
+                          </clipPath>
+                        </defs>
+                        <image class="pattern-img" xlink:href="img/dot_pattern.svg" clip-path="url(#triangle-view)"></image>
+                      </g>
+                      <g class="shape-brief-text">
+                                      <line class="shape-brief-text__text-line" x1="40" y1="12" x2="60" y2="12"></line>
+                        <text class="nav-link-text nav-link-text--caps shape-brief-text__label" x="80" y="15">Indicator text 4</text>
+                      </g>
+                    </svg><span class="small-header icon-label-wrapper__label label" data-label="Indicator text 4">Indicator text 4</span>
+                  </div>
+                </li>
+                <!--END: Triangle shape-->
+              </ul>
+            </div>
+            <div class="content">
+              <ul class="content-list">
+                            <li class="content-list-item">
+                              <p class="description-text content-list-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet massa nisi, commodo ultrices eros ultricies ac. Duis vestibulum sem eu nisi lacinia pretium. Cras sagittis dolor a mi malesuada rhoncus. Vestibulum sed dolor eu lorem euismod convallis. Quisque scelerisque nisi eu accumsan consectetur. Cras tristique suscipit efficitur. Aliquam erat volutpat. Morbi finibus quam eros, quis aliquet orci pretium quis. In interdum lacus a est faucibus, vitae posuere risus ultrices.</p>
+                            </li>
+                            <li class="content-list-item">
+                              <p class="description-text content-list-item__description">Donec ut fringilla odio. Integer vel ante orci. Vivamus varius tristique turpis, in suscipit odio commodo et. Sed nec viverra massa, ac gravida est. Morbi nulla ex, maximus quis commodo sit amet, consectetur sit amet mi. <i>Nunc posuere pellentesque dignissim</i>. Quisque varius dui odio. Donec rhoncus eros justo, sit amet condimentum diam cursus sed. Sed mattis ligula ac finibus feugiat. Pellentesque in justo sed ante eleifend ullamcorper a at erat. Maecenas pretium, nulla vel congue porttitor, libero metus vehicula ex, sit amet commodo erat felis eu augue.</p>
+                            </li>
+                            <li class="content-list-item">
+                              <p class="description-text content-list-item__description">Aliquam convallis mollis nisl pretium elementum. Maecenas sed turpis eu diam fringilla pharetra. Morbi rhoncus vehicula tellus, at semper erat vulputate sit amet. Donec vehicula neque id est scelerisque, ut consequat quam ultricies. Proin vitae velit ut turpis luctus pellentesque et ut tellus. Praesent eget euismod eros. Aliquam tempor pulvinar commodo. Donec pharetra velit cursus, porta ex id, feugiat mauris. Pellentesque venenatis nulla arcu, quis tem</p>
+                            </li>
+                            <li class="content-list-item">
+                              <p class="description-text content-list-item__description">r justo metus, id finibus urna congue ac. Aenean mattis mollis libero, nec convallis ligula. Nulla eu neque ligula. In hac habitasse platea dictumst. Nullam iaculis sempe r justo metus, id finibus urna congue ac. Aenean mattis mollis libero, nec convallis ligula. Nulla eu neque ligula. In hac habitasse platea dictumst. Nullam iaculis sempe</p>
+                            </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--script(src="js/jquery.js")-->
+    <!--script(src="js/slick.min.js")-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
